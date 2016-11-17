@@ -1,0 +1,47 @@
+<%= form_for(winter) do |f| %>
+  <% if winter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(winter.errors.count, "error") %> prohibited this winter from being saved:</h2>
+
+      <ul>
+      <% winter.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<div class="field">
+		<%= f.label :student_name, '生徒名(全角カナ)' %>
+		<%= f.text_field :student_name %>
+	</div>
+
+  <div class="field">
+    <%= f.label :mon, '月' %>
+    <%= f.number_field :mon %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tue, '火' %>
+    <%= f.number_field :tue %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wed, '水' %>
+    <%= f.number_field :wed %>
+  </div>
+
+  <div class="field">
+    <%= f.label :thr, '木' %>
+    <%= f.number_field :thr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fri, '金' %>
+    <%= f.number_field :fri %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit '時間を計算する' %>
+  </div>
+<% end %>

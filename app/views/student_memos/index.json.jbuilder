@@ -1,0 +1,1 @@
+json.array! @student_memos, partial: 'student_memos/student_memo', as: :student_memo

@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>生徒名:</strong>
+  <%= @winter.student_name %>
+</p>
+
+<p>
+  <strong>月:</strong>
+  <%= @winter.mon %>
+</p>
+
+<p>
+  <strong>火:</strong>
+  <%= @winter.tue %>
+</p>
+
+<p>
+  <strong>水:</strong>
+  <%= @winter.wed %>
+</p>
+
+<p>
+  <strong>木:</strong>
+  <%= @winter.thr %>
+</p>
+
+<p>
+  <strong>金:</strong>
+  <%= @winter.fri %>
+</p>
+
+<p>
+  <strong>12月:</strong>
+	<font color=red>  <%= @winter.sum_12 %></font>
+</p>
+
+<p>
+  <strong>1月:</strong>
+	<font color=red>
+  <%= @winter.sum_12 %>
+	</font>
+</p>
+
+<%= link_to '編集', edit_winter_path(@winter) %> |
+<%= link_to '戻る', winters_path %>

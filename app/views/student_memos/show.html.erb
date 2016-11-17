@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>生徒名:</strong>
+	<%= @student_memo.student_name %>
+</p>
+
+<p>
+  <strong>エニア:</strong>
+  <%= @student_memo.ennea %>
+</p>
+
+<p>
+  <strong>CT数:</strong>
+  <%= @student_memo.ct_times %>
+</p>
+
+
+<p>
+  <strong>通塾校:</strong>
+  <%= @student_memo.going_school %>
+</p>
+
+<p>
+  <strong>学年:</strong>
+  <%= @student_memo.grade %>
+</p>
+
+<p>
+  <strong>志望校:</strong>
+  <%= @student_memo.preferred_school %>
+</p>
+
+<p>
+  <strong>科目:</strong>
+  <%= @student_memo.subject %>
+</p>
+
+<p>
+  <strong>テキスト名:</strong>
+  <%= @student_memo.textbook %>
+</p>
+
+<p>
+  <strong>回数:</strong>
+  <%= @student_memo.textbook_number %>
+</p>
+
+
+<p>
+  <strong>記録:</strong>
+  <%= @student_memo.record %>
+</p>
+
+<p>
+  <strong>作成日:</strong>
+  <%= @student_memo.created_at %>
+</p>
+
+<p>
+  <strong>更新日:</strong>
+  <%= @student_memo.updated_at %>
+</p>
+
+<%= link_to '編集', edit_student_memo_path(@student_memo) %> |
+<%= link_to '戻る', student_memos_path %>

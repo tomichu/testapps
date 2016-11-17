@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>Timer</title>
+		<%= stylesheet_link_tag "stopwatch" %>
+	</head>
+	<body>
+<%= form_for(student_memo) do |f| %>
+
+  <% if student_memo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student_memo.errors.count, "error") %> prohibited this student_memo from being saved:</h2>
+
+      <ul>
+      <% student_memo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+	<br>
+
+  <div class="field">
+    <%= f.label :student_name, '生徒名' %>
+    <%= f.text_field :student_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ennea, 'エニアグラム' %>
+    <%= f.number_field :ennea %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ct_times, 'CT数' %>
+    <%= f.number_field :ct_times %>
+  </div>
+
+  <div class="field">
+    <%= f.label :going_school, '通塾中の学校' %>
+    <%= f.text_field :going_school %>
+  </div>
+
+  <div class="field">
+    <%= f.label :grade, '学年' %>
+    <%= f.number_field :grade %>
+  </div>
+
+  <div class="field">
+    <%= f.label :preferred_school, '志望校' %>
+    <%= f.text_field :preferred_school %>
+  </div>
+
+  <div class="field">
+    <%= f.label :subject, '科目名' %>
+    <%= f.text_field :subject %>
+  </div>
+
+  <div class="field">
+    <%= f.label :textbook, 'テキスト名' %>
+    <%= f.text_field :textbook %>
+  </div>
+
+  <div class="field">
+    <%= f.label :textbook_number, '回数' %>
+    <%= f.number_field :textbook_number %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :record, '記録' %>
+    <%= f.text_area :record %>
+  </div>
+
+  <div class="field">
+    <%= f.label :created_at, '作成日' %>
+    <%= f.datetime_select :created_at %>
+  </div>
+
+  <div class="field">
+    <%= f.label :updated_at, '更新日' %>
+    <%= f.datetime_select :updated_at %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+
+<script>
+$(function(){
+	$("input[type=checkbox]").click(function(){
+		$.post('/student-memos/'+$(this).data('student-memo_id')+'/tasks/'+$(this).data('id')+'/toggle');
+	});
+});
+</script>
+
+<br>
+		<div id="timerText">0.00</div>
+		<div id="start">START</div>
+		<div id="stop">STOP</div>
+		<div id="reset">RESET</div>
+	<br><br>
+	<%= javascript_include_tag "stopwatch" %>
+	</body>
+</html>
+

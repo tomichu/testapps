@@ -1,0 +1,262 @@
+<%= form_for(pexam) do |f| %>
+  <% if pexam.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pexam.errors.count, "error") %> prohibited this pexam from being saved:</h2>
+
+      <ul>
+      <% pexam.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :student_name %>
+    <%= f.text_field :student_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :english_score_16_1 %>
+    <%= f.number_field :english_score_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :english_dev_16_1 %>
+    <%= f.text_field :english_dev_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :english_score_16_2 %>
+    <%= f.number_field :english_score_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :english_dev_16_2 %>
+    <%= f.text_field :english_dev_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :english_score_16_3 %>
+    <%= f.number_field :english_score_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :english_dev_16_3 %>
+    <%= f.text_field :english_dev_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :english_score_16_4 %>
+    <%= f.number_field :english_score_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :english_dev_16_4 %>
+    <%= f.text_field :english_dev_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math1_score_16_1 %>
+    <%= f.number_field :math1_score_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math1_dev_16_1 %>
+    <%= f.text_field :math1_dev_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math1_score_16_2 %>
+    <%= f.number_field :math1_score_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math1_dev_16_2 %>
+    <%= f.text_field :math1_dev_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math1_score_16_3 %>
+    <%= f.number_field :math1_score_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math1_dev_16_3 %>
+    <%= f.text_field :math1_dev_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math1_score_16_4 %>
+    <%= f.number_field :math1_score_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math1_dev_16_4 %>
+    <%= f.text_field :math1_dev_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math2_score_16_1 %>
+    <%= f.number_field :math2_score_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math2_dev_16_1 %>
+    <%= f.text_field :math2_dev_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math2_score_16_2 %>
+    <%= f.number_field :math2_score_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math2_dev_16_2 %>
+    <%= f.text_field :math2_dev_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math2_score_16_3 %>
+    <%= f.number_field :math2_score_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math2_dev_16_3 %>
+    <%= f.text_field :math2_dev_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math2_score_16_4 %>
+    <%= f.number_field :math2_score_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math2_dev_16_4 %>
+    <%= f.text_field :math2_dev_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genbun_score_16_1 %>
+    <%= f.number_field :genbun_score_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genbun_dev_16_1 %>
+    <%= f.text_field :genbun_dev_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genbun_score_16_2 %>
+    <%= f.number_field :genbun_score_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genbun_dev_16_2 %>
+    <%= f.text_field :genbun_dev_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genbun_score_16_3 %>
+    <%= f.number_field :genbun_score_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genbun_dev_16_3 %>
+    <%= f.text_field :genbun_dev_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kobun_score_16_4 %>
+    <%= f.number_field :kobun_score_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kobun_dev_16_4 %>
+    <%= f.text_field :kobun_dev_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kobun_score_16_1 %>
+    <%= f.number_field :kobun_score_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kobun_dev_16_1 %>
+    <%= f.text_field :kobun_dev_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kobun_score_16_2 %>
+    <%= f.number_field :kobun_score_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kobun_dev_16_2 %>
+    <%= f.text_field :kobun_dev_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kobun_score_16_3 %>
+    <%= f.number_field :kobun_score_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kobun_dev_16_3 %>
+    <%= f.text_field :kobun_dev_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kobun_score_16_4 %>
+    <%= f.number_field :kobun_score_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kobun_dev_16_4 %>
+    <%= f.text_field :kobun_dev_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kanbun_score_16_1 %>
+    <%= f.number_field :kanbun_score_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kanbun_dev_16_1 %>
+    <%= f.text_field :kanbun_dev_16_1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kanbun_score_16_2 %>
+    <%= f.number_field :kanbun_score_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kanbun_dev_16_2 %>
+    <%= f.text_field :kanbun_dev_16_2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kanbun_score_16_3 %>
+    <%= f.number_field :kanbun_score_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kanbun_dev_16_3 %>
+    <%= f.text_field :kanbun_dev_16_3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kanbun_score_16_4 %>
+    <%= f.number_field :kanbun_score_16_4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :kanbun_dev_16_4 %>
+    <%= f.text_field :kanbun_dev_16_4 %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

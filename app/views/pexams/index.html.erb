@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>生徒模試結果閲覧</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>生徒名</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pexams.each do |pexam| %>
+      <tr>
+        <td><%= pexam.student_name %></td>
+        <td><%= link_to '詳細', pexam %></td>
+        <td><%= link_to '編集', edit_pexam_path(pexam) %></td>
+        <td><%= link_to '削除', pexam, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新規生徒', new_pexam_path %>
+
+<h2>CSVのアップロード</h2>
+
+<%= form_tag import_pexams_path, multipart: true do %>
+	<%= file_field_tag :file %>
+	<%= submit_tag "アップロード" %>
+<% end %>
+
+<h2>CSVのダウンロード</h2>
+
+<%= link_to "CSV", pexams_path(format: "csv") %>

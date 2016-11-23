@@ -1,5 +1,5 @@
 current directory: /Users/ST/Library/Mobile Documents/M6HJR9W95L~com~textasticapp~textastic/Documents/tj/vendor/bundle/gems/nokogiri-1.6.8.1/ext/nokogiri
-/Users/ST/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20161113-74620-15nt82r.rb extconf.rb
+/Users/ST/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20161123-77019-16f7u9w.rb extconf.rb
 checking if the C compiler accepts ... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
 Building nokogiri using packaged libraries.

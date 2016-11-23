@@ -1,0 +1,42 @@
+<%= form_for(grammer_lv1) do |f| %>
+  <% if grammer_lv1.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(grammer_lv1.errors.count, "error") %> prohibited this grammer_lv1 from being saved:</h2>
+
+      <ul>
+      <% grammer_lv1.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :q1 %>
+    <%= f.number_field :q1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :q2 %>
+    <%= f.number_field :q2 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :q3 %>
+    <%= f.number_field :q3 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :q4 %>
+    <%= f.number_field :q4 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :q5 %>
+    <%= f.number_field :q5 %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

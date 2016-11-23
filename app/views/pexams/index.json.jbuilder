@@ -1,0 +1,1 @@
+json.array! @pexams, partial: 'pexams/pexam', as: :pexam

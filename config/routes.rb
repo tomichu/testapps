@@ -1,7 +1,16 @@
 Rails.application.routes.draw do
-  resources :pexams do
-		collection { post :import }
+  resources :exams
+  resources :exams do
+		collection do
+			post :import
+		end
 	end
+  resources :pexams do
+		collection do
+			post :import
+		end
+	end
+
   resources :grammer_lv1s
 	resources :projects do
 		resources :tasks, only: [ :create, :destroy ]

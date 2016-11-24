@@ -1,1 +1,0 @@
-json.partial! "pexams/pexam", pexam: @pexam

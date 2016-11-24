@@ -1,6 +1,6 @@
-class CreatePexams < ActiveRecord::Migration[5.0]
+class CreateExams < ActiveRecord::Migration[5.0]
   def change
-    create_table :pexams do |t|
+    create_table :exams do |t|
       t.string :student_name
       t.integer :english_score_16_1
       t.float :english_dev_16_1

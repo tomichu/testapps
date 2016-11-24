@@ -1,0 +1,135 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Exams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Student name</th>
+      <th>English score 16 1</th>
+      <th>English dev 16 1</th>
+      <th>English score 16 2</th>
+      <th>English dev 16 2</th>
+      <th>English score 16 3</th>
+      <th>English dev 16 3</th>
+      <th>English score 16 4</th>
+      <th>English dev 16 4</th>
+      <th>Math1 score 16 1</th>
+      <th>Math1 dev 16 1</th>
+      <th>Math1 score 16 2</th>
+      <th>Math1 dev 16 2</th>
+      <th>Math1 score 16 3</th>
+      <th>Math1 dev 16 3</th>
+      <th>Math1 score 16 4</th>
+      <th>Math1 dev 16 4</th>
+      <th>Math2 score 16 1</th>
+      <th>Math2 dev 16 1</th>
+      <th>Math2 score 16 2</th>
+      <th>Math2 dev 16 2</th>
+      <th>Math2 score 16 3</th>
+      <th>Math2 dev 16 3</th>
+      <th>Math2 score 16 4</th>
+      <th>Math2 dev 16 4</th>
+      <th>Genbun score 16 1</th>
+      <th>Genbun dev 16 1</th>
+      <th>Genbun score 16 2</th>
+      <th>Genbun dev 16 2</th>
+      <th>Genbun score 16 3</th>
+      <th>Genbun dev 16 3</th>
+      <th>Kobun score 16 4</th>
+      <th>Kobun dev 16 4</th>
+      <th>Kobun score 16 1</th>
+      <th>Kobun dev 16 1</th>
+      <th>Kobun score 16 2</th>
+      <th>Kobun dev 16 2</th>
+      <th>Kobun score 16 3</th>
+      <th>Kobun dev 16 3</th>
+      <th>Kobun score 16 4</th>
+      <th>Kobun dev 16 4</th>
+      <th>Kanbun score 16 1</th>
+      <th>Kanbun dev 16 1</th>
+      <th>Kanbun score 16 2</th>
+      <th>Kanbun dev 16 2</th>
+      <th>Kanbun score 16 3</th>
+      <th>Kanbun dev 16 3</th>
+      <th>Kanbun score 16 4</th>
+      <th>Kanbun dev 16 4</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exams.each do |exam| %>
+      <tr>
+        <td><%= exam.student_name %></td>
+        <td><%= exam.english_score_16_1 %></td>
+        <td><%= exam.english_dev_16_1 %></td>
+        <td><%= exam.english_score_16_2 %></td>
+        <td><%= exam.english_dev_16_2 %></td>
+        <td><%= exam.english_score_16_3 %></td>
+        <td><%= exam.english_dev_16_3 %></td>
+        <td><%= exam.english_score_16_4 %></td>
+        <td><%= exam.english_dev_16_4 %></td>
+        <td><%= exam.math1_score_16_1 %></td>
+        <td><%= exam.math1_dev_16_1 %></td>
+        <td><%= exam.math1_score_16_2 %></td>
+        <td><%= exam.math1_dev_16_2 %></td>
+        <td><%= exam.math1_score_16_3 %></td>
+        <td><%= exam.math1_dev_16_3 %></td>
+        <td><%= exam.math1_score_16_4 %></td>
+        <td><%= exam.math1_dev_16_4 %></td>
+        <td><%= exam.math2_score_16_1 %></td>
+        <td><%= exam.math2_dev_16_1 %></td>
+        <td><%= exam.math2_score_16_2 %></td>
+        <td><%= exam.math2_dev_16_2 %></td>
+        <td><%= exam.math2_score_16_3 %></td>
+        <td><%= exam.math2_dev_16_3 %></td>
+        <td><%= exam.math2_score_16_4 %></td>
+        <td><%= exam.math2_dev_16_4 %></td>
+        <td><%= exam.genbun_score_16_1 %></td>
+        <td><%= exam.genbun_dev_16_1 %></td>
+        <td><%= exam.genbun_score_16_2 %></td>
+        <td><%= exam.genbun_dev_16_2 %></td>
+        <td><%= exam.genbun_score_16_3 %></td>
+        <td><%= exam.genbun_dev_16_3 %></td>
+        <td><%= exam.kobun_score_16_4 %></td>
+        <td><%= exam.kobun_dev_16_4 %></td>
+        <td><%= exam.kobun_score_16_1 %></td>
+        <td><%= exam.kobun_dev_16_1 %></td>
+        <td><%= exam.kobun_score_16_2 %></td>
+        <td><%= exam.kobun_dev_16_2 %></td>
+        <td><%= exam.kobun_score_16_3 %></td>
+        <td><%= exam.kobun_dev_16_3 %></td>
+        <td><%= exam.kobun_score_16_4 %></td>
+        <td><%= exam.kobun_dev_16_4 %></td>
+        <td><%= exam.kanbun_score_16_1 %></td>
+        <td><%= exam.kanbun_dev_16_1 %></td>
+        <td><%= exam.kanbun_score_16_2 %></td>
+        <td><%= exam.kanbun_dev_16_2 %></td>
+        <td><%= exam.kanbun_score_16_3 %></td>
+        <td><%= exam.kanbun_dev_16_3 %></td>
+        <td><%= exam.kanbun_score_16_4 %></td>
+        <td><%= exam.kanbun_dev_16_4 %></td>
+        <td><%= link_to 'Show', exam %></td>
+        <td><%= link_to 'Edit', edit_exam_path(exam) %></td>
+        <td><%= link_to 'Destroy', exam, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exam', new_exam_path %>
+
+<p>
+ダウンロード:
+<%= link_to "CSV", exams_path(format: "csv") %>
+</p>
+
+<h2>アップロード</h2>
+
+<%= form_tag import_exams_path, multipart: true do %>
+	<%= file_field_tag :file %>
+	<%= submit_tag "アップロード" %>
+<% end %>

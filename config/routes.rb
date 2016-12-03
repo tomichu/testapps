@@ -5,8 +5,9 @@ Rails.application.routes.draw do
 
 	post '/projects/:project_id/tasks/:id/toggle' => 'tasks#toggle'
 
-  resources :winters
 	root 'top#index'
+
+  resources :winters
   resources :student_memos
 
 	namespace :admin do

@@ -1,2 +1,0 @@
-module GrammerLv1sHelper
-end

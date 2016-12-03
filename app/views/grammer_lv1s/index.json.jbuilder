@@ -1,1 +1,0 @@
-json.array! @grammer_lv1s, partial: 'grammer_lv1s/grammer_lv1', as: :grammer_lv1

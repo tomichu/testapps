@@ -1,1 +1,0 @@
-json.partial! "grammer_lv1s/grammer_lv1", grammer_lv1: @grammer_lv1

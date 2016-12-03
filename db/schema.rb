@@ -12,16 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20161124035449) do
 
-  create_table "admin_users", force: :cascade do |t|
-    t.integer  "imported_num"
-    t.integer  "english_score_1"
-    t.float    "english_deviation_1"
-    t.integer  "english_score_2"
-    t.float    "english_deviation_2"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
-  end
-
   create_table "exams", force: :cascade do |t|
     t.string   "student_name"
     t.integer  "english_score_16_1"
@@ -72,16 +62,6 @@ ActiveRecord::Schema.define(version: 20161124035449) do
     t.float    "kanbun_dev_16_4"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
-  end
-
-  create_table "grammer_lv1s", force: :cascade do |t|
-    t.integer  "q1"
-    t.integer  "q2"
-    t.integer  "q3"
-    t.integer  "q4"
-    t.integer  "q5"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "projects", force: :cascade do |t|

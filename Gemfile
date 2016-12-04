@@ -9,6 +9,11 @@ gem 'pg', group: :production
 # Use Puma as the app server
 gem 'roo'
 
+gem 'haml', '~> 4.0.5'
+gem 'simple_form'
+gem 'devise'
+gem 'paperclip'
+
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

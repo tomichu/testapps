@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   resources :winters
   resources :student_memos
+	resources :posts
 
 	namespace :admin do
 		resources :users do

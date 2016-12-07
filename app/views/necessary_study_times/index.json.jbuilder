@@ -1,0 +1,1 @@
+json.array! @necessary_study_times, partial: 'necessary_study_times/necessary_study_time', as: :necessary_study_time

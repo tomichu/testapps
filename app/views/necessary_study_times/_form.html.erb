@@ -1,0 +1,62 @@
+<%= form_for(necessary_study_time) do |f| %>
+  <% if necessary_study_time.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(necessary_study_time.errors.count, "error") %> prohibited this necessary_study_time from being saved:</h2>
+
+      <ul>
+      <% necessary_study_time.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title, '生徒名' %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :english_ct, '英語のチェックテスト時間' %>
+    <%= f.number_field :english_ct %>
+  </div>
+
+  <div class="field">
+    <%= f.label :english_lec, '英語の指導時間' %>
+    <%= f.number_field :english_lec %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math_ct, '数学のチェックテスト時間' %>
+    <%= f.number_field :math_ct %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math_lec, '数学の指導時間' %>
+    <%= f.number_field :math_lec %>
+  </div>
+
+  <div class="field">
+    <%= f.label :japanese_ct, '現代文のチェックテスト時間' %>
+    <%= f.number_field :japanese_ct %>
+  </div>
+
+  <div class="field">
+    <%= f.label :japanese_lec, '現代文の指導時間' %>
+    <%= f.number_field :japanese_lec %>
+  </div>
+
+  <div class="field">
+    <%= f.label :classic_ct, '古文のチェックテスト時間' %>
+    <%= f.number_field :classic_ct %>
+  </div>
+
+  <div class="field">
+    <%= f.label :classic_lec, '古文の指導時間' %>
+    <%= f.number_field :classic_lec %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

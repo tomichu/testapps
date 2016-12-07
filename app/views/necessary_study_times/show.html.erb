@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @necessary_study_time.title %>
+</p>
+
+<p>
+  <strong>合計必要時間（時間）:</strong>
+	<font color= "red"><%= @necessary_study_time.summary_necessary_time_to_hour %></font>
+</p>
+
+<p>
+  <strong>English ct:</strong>
+  <%= @necessary_study_time.english_ct %>
+</p>
+
+<p>
+  <strong>English lec:</strong>
+  <%= @necessary_study_time.english_lec %>
+</p>
+
+<p>
+  <strong>Math ct:</strong>
+  <%= @necessary_study_time.math_ct %>
+</p>
+
+<p>
+  <strong>Math lec:</strong>
+  <%= @necessary_study_time.math_lec %>
+</p>
+
+<p>
+  <strong>Japanese ct:</strong>
+  <%= @necessary_study_time.japanese_ct %>
+</p>
+
+<p>
+  <strong>Japanese lec:</strong>
+  <%= @necessary_study_time.japanese_lec %>
+</p>
+
+<p>
+  <strong>Classic ct:</strong>
+  <%= @necessary_study_time.classic_ct %>
+</p>
+
+<p>
+  <strong>Classic lec:</strong>
+  <%= @necessary_study_time.classic_lec %>
+</p>
+
+<%= link_to 'Edit', edit_necessary_study_time_path(@necessary_study_time) %> |
+<%= link_to 'Back', necessary_study_times_path %>

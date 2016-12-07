@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  english_ct: 1
+  english_lec: 1
+  math_ct: 1
+  math_lec: 1
+  japanese_ct: 1
+  japanese_lec: 1
+  classic_ct: 1
+  classic_lec: 1
+
+two:
+  title: MyString
+  english_ct: 1
+  english_lec: 1
+  math_ct: 1
+  math_lec: 1
+  japanese_ct: 1
+  japanese_lec: 1
+  classic_ct: 1
+  classic_lec: 1

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Necessary Study Times</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>English ct</th>
+      <th>English lec</th>
+      <th>Math ct</th>
+      <th>Math lec</th>
+      <th>Japanese ct</th>
+      <th>Japanese lec</th>
+      <th>Classic ct</th>
+      <th>Classic lec</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @necessary_study_times.each do |necessary_study_time| %>
+      <tr>
+        <td><%= necessary_study_time.title %></td>
+        <td><%= necessary_study_time.english_ct %></td>
+        <td><%= necessary_study_time.english_lec %></td>
+        <td><%= necessary_study_time.math_ct %></td>
+        <td><%= necessary_study_time.math_lec %></td>
+        <td><%= necessary_study_time.japanese_ct %></td>
+        <td><%= necessary_study_time.japanese_lec %></td>
+        <td><%= necessary_study_time.classic_ct %></td>
+        <td><%= necessary_study_time.classic_lec %></td>
+        <td><%= link_to 'Show', necessary_study_time %></td>
+        <td><%= link_to 'Edit', edit_necessary_study_time_path(necessary_study_time) %></td>
+        <td><%= link_to 'Destroy', necessary_study_time, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Necessary Study Time', new_necessary_study_time_path %>

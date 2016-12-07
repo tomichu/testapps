@@ -1,0 +1,2 @@
+json.extract! necessary_study_time, :id, :title, :english_ct, :english_lec, :math_ct, :math_lec, :japanese_ct, :japanese_lec, :classic_ct, :classic_lec, :created_at, :updated_at
+json.url necessary_study_time_url(necessary_study_time, format: :json)

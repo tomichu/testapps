@@ -1,0 +1,1 @@
+json.partial! "necessary_study_times/necessary_study_time", necessary_study_time: @necessary_study_time

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :necessary_study_times
 	resources :projects do
 		resources :tasks, only: [ :create, :destroy ]

@@ -1,1 +1,4 @@
-%h1 test
+- @posts.each do |post|
+  %h2= link_to post.title, post
+
+= link_to "新規投稿", new_post_path

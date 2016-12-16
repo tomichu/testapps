@@ -2,3 +2,7 @@
   %h2= link_to post.title, post
 
 = link_to "新規投稿", new_post_path
+- if user_signed_in?
+  %p= link_to 'ログアウト', destroy_user_session_path, method: :delete
+
+

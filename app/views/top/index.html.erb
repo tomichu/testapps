@@ -2,4 +2,7 @@
 	<li><%= link_to '生徒記録', student_memos_path %></li>
 	<li><%= link_to '2016年度 冬期講習時間計算', winters_path %></li>
 	<li><%= link_to 'タスク管理', projects_path %></li>
+	<li><%= link_to 'SNS', posts_path %></li>
+	<li><%= link_to '必要な講習時間算出', necessary_study_times_path %></li>
 </ul>
+<p><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></p>

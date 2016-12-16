@@ -69,6 +69,6 @@ class NecessaryStudyTimesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def necessary_study_time_params
-      params.require(:necessary_study_time).permit(:title, :summary_necessary_time, :english_ct, :english_lec, :math_ct, :math_lec, :japanese_ct, :japanese_lec, :classic_ct, :classic_lec)
+      params.require(:necessary_study_time).permit(:title, :summary_necessary_time, :english_ct, :english_lec, :math_ct, :math_lec, :japanese_ct, :japanese_lec, :classic_ct, :classic_lec, :japanese_history_ct, :japanese_history_lec, :english_ct_num, :math_ct_num, :japanese_ct_num, :classic_ct_num, :japanese_history_ct_num)
     end
 end

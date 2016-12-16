@@ -13,6 +13,8 @@ gem 'haml', '~> 4.0.5'
 gem 'simple_form'
 gem 'devise'
 gem 'paperclip'
+gem 'imagemagick-identify', '~> 0.0.1'
+gem 'imagemagick-binaries', '~> 6.8', '>= 6.8.7.5.1'
 
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

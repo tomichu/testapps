@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161211134700) do
+ActiveRecord::Schema.define(version: 20161211142307) do
 
   create_table "exams", force: :cascade do |t|
     t.string   "student_name"
@@ -74,17 +74,28 @@ ActiveRecord::Schema.define(version: 20161211134700) do
     t.integer  "japanese_lec"
     t.integer  "classic_ct"
     t.integer  "classic_lec"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.integer  "japanese_history_ct"
+    t.integer  "japanese_history_lec"
+    t.         "english_ct_num"
+    t.         "math_ct_num"
+    t.         "japanese_ct_num"
+    t.         "japanese_history_ct_num"
+    t.         "classic_ct_num"
   end
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.string   "link"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.integer  "user_id"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "projects", force: :cascade do |t|

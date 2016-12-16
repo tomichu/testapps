@@ -27,6 +27,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :english_ct_num, '英語のテスト数' %>
+    <%= f.number_field :english_ct_num %>
+  </div>
+
+  <div class="field">
     <%= f.label :math_ct, '数学のチェックテスト時間' %>
     <%= f.number_field :math_ct %>
   </div>
@@ -34,6 +39,11 @@
   <div class="field">
     <%= f.label :math_lec, '数学の指導時間' %>
     <%= f.number_field :math_lec %>
+  </div>
+
+  <div class="field">
+    <%= f.label :math_ct_num, '数学のテスト数' %>
+    <%= f.number_field :math_ct_num %>
   </div>
 
   <div class="field">
@@ -47,6 +57,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :japanese_ct_num, '現代文のテスト数' %>
+    <%= f.number_field :japanese_ct_num %>
+  </div>
+
+  <div class="field">
     <%= f.label :classic_ct, '古文のチェックテスト時間' %>
     <%= f.number_field :classic_ct %>
   </div>
@@ -54,6 +69,26 @@
   <div class="field">
     <%= f.label :classic_lec, '古文の指導時間' %>
     <%= f.number_field :classic_lec %>
+  </div>
+
+  <div class="field">
+    <%= f.label :classic_ct_num, '古文のテスト数' %>
+    <%= f.number_field :classic_ct_num %>
+  </div>
+
+  <div class="field">
+    <%= f.label :japanese_history_ct, '日本史のチェックテスト時間' %>
+    <%= f.number_field :japanese_history_ct %>
+  </div>
+
+  <div class="field">
+    <%= f.label :japanese_history_lec, '日本史の指導時間' %>
+    <%= f.number_field :japanese_history_lec %>
+  </div>
+
+  <div class="field">
+    <%= f.label :japanese_history_ct_num, '日本史のテスト数' %>
+    <%= f.number_field :japanese_history_ct_num %>
   </div>
 
   <div class="actions">
